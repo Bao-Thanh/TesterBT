@@ -81,7 +81,7 @@ namespace Buoi07_TinhToan3
                 }
             }
 
-            else if (radChia.Checked && txtSo2.Text == "0")
+            else if (radChia.Checked && int.Parse(txtSo2.Text) == 0)
             {
                 dr = MessageBox.Show("Vui lòng nhập số thứ hai khác 0", "Lưu ý", MessageBoxButtons.OK);
                 if (dr == DialogResult.OK)
@@ -288,7 +288,8 @@ namespace Buoi07_TinhToan3
                     txtSo2.Select();
                 }
             }
-            else if (txtSo2.Text == "0")
+
+            else if (int.Parse(txtSo2.Text) == 0)
             {
                 dr = MessageBox.Show("Vui lòng nhập số thứ hai khác 0", "Lưu ý", MessageBoxButtons.OK);
                 if (dr == DialogResult.OK)
